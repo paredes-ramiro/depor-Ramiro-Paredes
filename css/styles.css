@@ -45,6 +45,43 @@ body {
     z-index: -1;
 }
 
+div {
+    display: block;
+}
+
+.container {
+    width: 100%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+}
+
+.row {
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col {
+    position: relative;
+    width: 100%;
+    height: auto;
+    min-height: 1px;
+    margin: 0 auto;
+    padding: 0;
+    flex: 1 0 0;
+    flex-direction: column;
+}
+
+.justify-start {
+    justify-content: flex-start;
+}
+
+.justify-center {
+    justify-content: center;
+}
 
 /* - - - - - - - - - grid - - - - - - - - - */
 
@@ -176,25 +213,26 @@ main {
     width: 100%;
     height: auto;
     margin: 0 auto;
-    padding: 8rem 4rem;
+    padding: 3rem 6rem 1.5rem;
     background-color: #003D2C;
     z-index: 1;
 }
 
 .home img {
-    display: inline-block;
-    width: 10rem;
-    height: 10rem;
+    display: block;
+    width: 50%;
+    height: auto;
+    margin: auto;
 }
 
 .home h1 {
-    font-size: 3rem;
+    font-size: 2rem;
     font-weight: bold;
     color: white;
 }
 
 .home p {
-    font-size: 2rem;
+    font-size: 1rem;
     font-weight: light;
     color: white;
     text-align: left;
@@ -210,7 +248,7 @@ main {
     width: 100%;
     height: auto;
     margin: 0 auto;
-    padding: 8rem 4rem;
+    padding: 3rem 6rem 1.5rem;
     background-color: #00573F;
     display: flex;
     flex-direction: row;
@@ -219,29 +257,25 @@ main {
     z-index: 1;
 }
 
-.partidos .texto-partidos {
-    width: 50%;
-    margin: 0 auto;
-    padding: 3rem;
-}
-
-.partidos .imagen-partidos {
-    width: 50%;
-    margin: 0 auto;
-    padding: 3rem;
-}
-
 .partidos img {
-    display: inline-block;
-    width: 20rem;
-    height: 20rem;
+    display: block;
+    width: 50%;
+    height: auto;
+    margin: auto;
+    border: 5px solid white;
+    border-radius: 5%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
 }
 
 .partidos h2 {
+    font-size: 1.75rem;
     text-align: right;
+    color: white;
 }
 
 .partidos p {
+    font-size: 1rem;
+    color: white;
     text-align: right;
 }
 
@@ -257,27 +291,36 @@ main {
     width: 100%;
     height: auto;
     margin: 0 auto;
-    padding: 8rem 4rem;
+    padding: 3rem 6rem 1.5rem;
     background-color: #003D2C;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     text-align: right;
     z-index: 1;
-    display: grid;
 }
 
-.plantel {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    grid-gap: 1rem;
-}
-
-.plantel .tarjeta{
-    background-color: #10B981;
-    padding: 1rem;
+.plantel .tarjeta {
+    width: 13%;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    display: block;
     border-radius: 1rem;
-  }
+    background-color: #10B981;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.plantel .tarjeta p {
+    text-align: left;
+    color: white;
+    font-size: 1.25rem;
+}
+
+.tarjeta img {
+    width: 100%;
+    height: auto;
+    margin: auto;
+}
 
 
 /* - - - - - - - - - grid - - - - - - - - - */
@@ -361,3 +404,219 @@ footer ul li a {
 }
 
 /* - - - - - - - - - grid - - - - - - - - - */
+
+
+/* - - - - - - - - - - - - - Start - - - - - - - - - - - - - - */
+/* - - - - - - - - - - - - - media queries - - - - - - - - - - - - - - */
+/* - - - - - - - - - - - - - here - - - - - - - - - - - - - - */
+
+
+@media (max-width: 600px) {
+
+    /* - - - - - banner sponsors - - - - - */
+    body {
+        padding: 0;
+        font-size: 12px;
+    }
+
+    /* - - - - - body - - - - - */
+    /* - - - - - banner sponsors - - - - - */
+    .banner-sponsors {
+        height: auto;
+        overflow-x: hidden;
+    }
+
+    .banner-sponsors img {
+        height: 2rem;
+        margin: 0.5rem auto;
+        display: block;
+    }
+
+    /* - - - - - banner sponsors - - - - - */
+    /* - - - - - header - - - - - */
+    header {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    header h2 {
+        margin: 1rem 2rem;
+        display: inline-block;
+        font-weight: 300;
+        font-size: 1.5rem;
+    }
+
+    header img {
+        display: none;
+    }
+
+    header nav {
+        width: 100%;
+    }
+
+    header ul {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        flex-shrink: 1;
+    }
+
+    header ul li {
+        width: 100%;
+        height: auto;
+        margin: 1.2rem 1.2rem;
+        padding: 0.75rem 1rem;
+        flex: 1;
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    /* - - - - - header - - - - - */
+    /* - - - - - home - - - - - */
+
+
+    .home {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+        padding: 3rem 6rem 1.5rem;
+        background-color: #003D2C;
+        z-index: 1;
+    }
+
+    .home .row {
+        display: block;
+        flex-direction: column;
+
+    }
+
+    .home .col {
+        display: inline-block;
+        width: 100%;
+    }
+
+    .home img {
+        display: block;
+        width: 50%;
+        height: auto;
+        margin: auto;
+    }
+
+    .home h1 {
+        text-align: center;
+    }
+
+    .home p {
+        text-align: center;
+    }
+
+    /* - - - - - home - - - - - */
+    /* - - - - - partidos - - - - - */
+
+    .partidos {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+    }
+
+    .partidos .row {
+        display: block;
+        flex-direction: column;
+
+    }
+
+    .partidos .col {
+        display: inline-block;
+        width: 100%;
+    }
+
+    .partidos img {
+        display: block;
+        width: 100%;
+        height: auto;
+        margin: 2rem auto;
+    }
+
+    .partidos h2 {
+        text-align: center;
+    }
+
+    .partidos p {
+        text-align: center;
+    }
+
+    /* - - - - - partidos - - - - - */
+    /* - - - - - plantel - - - - - */
+
+    .plantel {
+        margin: 0 auto;
+        padding: 0 1rem;
+    }
+
+    .plantel .tarjeta {
+        width: 100%;
+        margin: 0.5rem;
+        padding: 0.5rem;
+        display: block;
+        border-radius: 1rem;
+        background-color: #10B981;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    }
+
+    .plantel .tarjeta p {
+        text-align: left;
+        color: white;
+        font-size: 1.5rem;
+    }
+
+    .tarjeta img {
+        width: 100%;
+        height: auto;
+        margin: auto;
+    }
+
+    /* - - - - - plantel - - - - - */
+    /* - - - - - footer - - - - - */
+
+    footer {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    footer nav {
+        width: 100%;
+    }
+
+    footer ul {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        flex-shrink: 1;
+    }
+
+    footer ul li {
+        width: 100%;
+        height: auto;
+        margin: 1.2rem 1.2rem;
+        padding: 0.75rem 1rem;
+        flex: 1;
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+}
