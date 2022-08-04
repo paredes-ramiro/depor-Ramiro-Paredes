@@ -251,7 +251,7 @@ main {
     animation-play-state: running;
 }
 
-@-webkit-keyframes animation {
+@keyframes animation {
     0%     {background-color:#003D2C;}
     50.0%  {background-color:#00573F;}
     100.0%  {background-color:#003D2C;}
