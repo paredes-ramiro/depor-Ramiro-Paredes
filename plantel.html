@@ -14,6 +14,10 @@
         href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;1,100;1,300;1,400;1,500;1,600;1,700&display=swap"
         rel="stylesheet">
 
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
     <!-- Code -->
     <link rel="stylesheet" href="css/styles.css">
 </head>
@@ -21,44 +25,73 @@
 <body>
     <div class="fondo"></div>
     <!-- Banner sponsors -->
-    <div class="banner-sponsors">
-        <img src="img/borr-logo.png" alt="">
-        <img src="img/borr-logo.png" alt="">
-        <img src="img/borr-logo.png" alt="">
-        <img src="img/borr-logo.png" alt="">
-        <img src="img/borr-logo.png" alt="">
-        <img src="img/borr-logo.png" alt="">
-        <img src="img/borr-logo.png" alt="">
-        <img src="img/borr-logo.png" alt="">
-        <img src="img/borr-logo.png" alt="">
-        <img src="img/borr-logo.png" alt="">
-        <img src="img/borr-logo.png" alt="">
-        <img src="img/borr-logo.png" alt="">
-        <img src="img/borr-logo.png" alt="">
-        <img src="img/borr-logo.png" alt="">
-        <img src="img/borr-logo.png" alt="">
-        <img src="img/borr-logo.png" alt="">
-        <img src="img/borr-logo.png" alt="">
-        <img src="img/borr-logo.png" alt="">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 banner-sponsors">
+                <img src="img/borr-logo.png" alt="">
+                <img src="img/borr-logo.png" alt="">
+                <img src="img/borr-logo.png" alt="">
+                <img src="img/borr-logo.png" alt="">
+                <img src="img/borr-logo.png" alt="">
+                <img src="img/borr-logo.png" alt="">
+                <img src="img/borr-logo.png" alt="">
+                <img src="img/borr-logo.png" alt="">
+                <img src="img/borr-logo.png" alt="">
+                <img src="img/borr-logo.png" alt="">
+                <img src="img/borr-logo.png" alt="">
+                <img src="img/borr-logo.png" alt="">
+                <img src="img/borr-logo.png" alt="">
+                <img src="img/borr-logo.png" alt="">
+                <img src="img/borr-logo.png" alt="">
+                <img src="img/borr-logo.png" alt="">
+                <img src="img/borr-logo.png" alt="">
+                <img src="img/borr-logo.png" alt="">
+            </div>
+        </div>
     </div>
     <!-- Banner sponsors -->
-
     <!-- Header -->
     <header>
-        <img src="img/escudo.png" alt="">
-        <h2>Deportivo Trípoli</h2>
-        <nav>
-            <ul>
-                <li><a href="index.html#home">Home</a></li>
-                <li><a href="index.html#partidos">Partidos</a></li>
-                <li><a href="index.html#about">About</a></li>
-                <li><a href="index.html#contacto">Contacto</a></li>
-                <li><a href="https://www.instagram.com/depor.tripoli/" target="_blank">Ir a Instagram</a></li>
-                <li style="background-color: tomato; color:white;"><a
-                        href="documents/Depor Trípoli - Ramiro Paredes.pdf" target=”_blank” style="color:white;">Link to
-                        the wireframes</a></li>
-            </ul>
-        </nav>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                    <nav class="navbar navbar-expand-lg">
+                        <div class="container-fluid">
+                            <a class="navbar-brand" href="#">
+                                <img src="img/escudo.png" alt="" width="30" height="24"
+                                    class="d-inline-block align-text-top">
+                                <h2>Deportivo Trípoli</h2>
+                            </a>
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                    <li class="nav-item">
+                                        <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" aria-current="page" href="#partidos">Partidos</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" aria-current="page" href="#plantel">Plantel</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" aria-current="page" href="about.html">About</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" aria-current="page" href="#contacto">Contacto</a>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
     </header>
     <!-- Header -->
     <main>
@@ -331,18 +364,88 @@
         </section>
         <!-- Plantel -->
     </main>
+
+        <!-- Contacto -->
+        <section id="contacto" class="contacto">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 justify-content-center">
+                        <h3>Contacto</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi itaque deleniti unde
+                            placeat
+                            amet
+                            hic
+                            quas
+                            quibusdam obcaecati, ea quidem consectetur fugiat fugit! Earum doloremque tenetur enim,
+                            odio
+                            voluptatum
+                            officia.</p>
+                        <form class="needs-validation" novalidate="">
+                            <div class="row g-3">
+                                <div class="col-12 col-lg-6">
+                                    <label for="nombre" class="form-label">Nombre</label>
+                                    <input type="text" class="form-control" id="nombre" placeholder="Nombre" value=""
+                                        required="">
+                                </div>
+                                <div class="col-12 col-lg-6">
+                                    <label for="apellido" class="form-label">Apellido</label>
+                                    <input type="text" class="form-control" id="apellido" placeholder="Apellido"
+                                        value="" required="">
+                                </div>
+                                <div class="col-12 col-lg-6">
+                                    <label for="email" class="form-label">Email</label>
+                                    <input type="email" class="form-control" id="email"
+                                        placeholder="nombre@ejemplo.com">
+                                </div>
+                                <div class="col-12 col-lg-6">
+                                    <label for="rol" class="form-label">Soy un:</label>
+                                    <select class="form-select" id="rol" required="">
+                                        <option value="">Elige uno..</option>
+                                        <option>Fan</option>
+                                        <option>Jugador</option>
+                                        <option>Cuerpo Técnico</option>
+                                        <option>Otro</option>
+                                    </select>
+                                </div>
+                                <div class="col-12 col-lg-6">
+                                    <div class="mb-3">
+                                        <label for="mensaje" class="form-label">Escribe tu mensaje aquí:</label>
+                                        <textarea class="form-control" id="mensaje" rows="3"></textarea>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-lg-6">
+                                    <div class="form-check">
+                                        <input type="checkbox" class="form-check-input" id="newsletter">
+                                        <label class="form-check-label" for="newsletter">Quiero recibir info del cuadro.
+                                    </div>
+                                </div>
+                                <button class="w-25 mx-3 btn btn-primary btn-md" type="submit">Enviar</button>
+                                <button class="w-25 mx-3 btn btn-dark btn-md" type="reset">Reset</button>
+                            </div>
+                    </div>
+                </div>
+        </section>
+        <!-- Contacto -->
+    </main>
     <!-- Footer -->
     <footer>
-        <nav>
-            <ul>
-                <li><a href="index.html#home">Home</a></li>
-                <li><a href="index.html#partidos">Partidos</a></li>
-                <li><a href="index.html#about">About</a></li>
-                <li><a href="index.html#contacto">Contacto</a></li>
-                <li><a href="https://www.instagram.com/depor.tripoli/" target="_blank">Ir a Instagram</a></li>
-            </ul>
-            </ul>
-        </nav>
+        <ul>
+            <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#partidos">Partidos</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#plantel.html">Plantel</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#contacto">Contacto</a>
+            </li>
+        </ul>
     </footer>
     <!-- Footer -->
     <!-- Banner sponsors -->
@@ -367,6 +470,12 @@
         <img src="img/borr-logo.png" alt="">
     </div>
     <!-- Banner sponsors -->
+
+    <!-- js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+
 </body>
 
 </html>
