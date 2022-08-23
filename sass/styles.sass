@@ -1,0 +1,208 @@
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+    font-family: 'Noto Sans', sans-serif !important
+
+/* - - - - variables - - - - - */
+$verde-1: #192F2A
+$verde-2: #003D2C
+$verde-3: #00573F
+$verde-4: #00E094
+$negro-1: #1a1a1a
+$padding-1: 1.5rem 1rem
+$padding-2: 4rem 2rem
+$margin-1: 0 auto
+    
+/* - - - - maps - - - - - */
+$colores-fondo:( "verde-1": #192F2A, "verde-2": #003D2C, "verde-3": #00573F, "verde-4": #00E094, "negro-1":#1a1a1a)
+$white-space-padding:( "simple": $padding-1, "doble": $padding-2)
+
+/* - - - - classes - - - - - */    
+.scale-hover
+    transition: 1s ease-in-out
+    &:hover
+        transform: scale(1.1)
+        transition: 1s ease-in-out
+
+.section-title
+    color: white
+    text-align: left
+    font-size: 2rem
+    font-weight: 600
+
+.section-p
+    @extend .section-title
+    font-size: 1.2rem
+    font-weight: 100
+
+@mixin div-fondo-completo
+    position: fixed
+    top: 0
+    left: 0
+    margin: 0
+    padding: 0
+    width: 100vw
+    height: 100vh
+
+    
+
+/* - - - - body - - - - - */    
+body
+    background-color: map-get($colores-fondo, verde-1)
+    width: 100%
+    margin: 0 auto
+    padding: 0 50px
+    font-size: 16px
+    overflow-x: hidden
+    border: 1px solid $verde-1
+    box-sizing: border-box
+
+/* - - - - fondo - - - - - */      
+.fondo
+    @include div-fondo-completo    
+    background-image: url("../img/fondo.png")
+    background-position: center center
+    background-repeat: no-repeat
+    background-size: cover
+    opacity: 0.3
+    z-index: -1
+
+/* - - - - banner - - - - - */      
+.banner-sponsors
+    margin: $margin-1
+    padding: map-get($white-space-padding, simple )
+    background-color: map-get($colores-fondo, negro-1)
+    display: flex
+    flex-direction: row
+    justify-content: center
+    vertical-align: middle
+    z-index: 1
+    overflow: hidden
+    img
+        width: auto
+        height: 1.5rem
+        margin: 0 auto
+        display: inline-block
+
+/* - - - - banner - - - - - */          
+header
+    margin: $margin-1
+    padding: map-get($white-space-padding, simple )
+    background-color: map-get($colores-fondo, verde-1)
+    color: white
+    z-index: 1
+    nav
+        margin: 0 auto
+        vertical-align: middle
+        justify-content: center
+    #navbarNav
+        align-content: center
+        align-items: center
+        ul
+            margin: 0 auto
+            padding: 0
+            width: 90%
+            list-style: none
+            li
+                margin: 0 auto
+                padding: 0.1rem 0.2rem
+                font-size: 1.1rem
+                font-weight: bold
+                border-left: 1px solid $verde-4
+                a
+                    color: white
+            .btn-header
+                background-color: $verde-4
+                color: #1a1a1a
+                border: 1px solid $verde-4
+                border-radius: 5px
+                box-shadow: 0.1rem 0.1rem 0.8rem 0.2rem rgba(0, 0, 0, 0.3)
+                box-sizing: border-box
+                transition: 0.3s ease-in-out
+                &:hover
+                    background-color: $verde-1
+                    border: 1px solid $verde-4
+                    box-shadow: 0.2rem 0.2rem 0.5rem 0.3rem rgba(0, 0, 0, 0.3)
+
+.navbar
+    padding: 0 4rem
+
+/* - - - - - - - home - - - - - - */   
+.home
+    padding: map-get($white-space-padding, doble)
+    background-color: map-get($colores-fondo, verde-2)
+    img
+        margin: 0 auto
+        display: block !important
+    .btn
+        border: 1px solid $verde-4
+        color: $verde-4
+        box-shadow: 0.1rem 0.1rem 0.8rem 0.2rem rgba(0, 0, 0, 0.3)
+        &:hover
+            background-color: $verde-4
+            color: #003D2C
+            box-shadow: 0.2rem 0.2rem 0.5rem 0.3rem rgba(0, 0, 0, 0.3)
+
+/* - - - - - - - partidos - - - - - - */
+.partidos
+    padding: map-get($white-space-padding, doble)
+    background-color: map-get($colores-fondo, verde-2)
+    img
+        margin: 2rem auto
+        display: block !important
+        border: 2px solid white
+        border-radius: 5%
+        box-shadow: 0.1rem 0.1rem 0.8rem 0.2rem rgba(0, 0, 0, 0.3)
+        &:hover
+            box-shadow: 0.2rem 0.2rem 0.5rem 0.3rem rgba(0, 0, 0, 0.3)
+
+/* - - - - - - - plantel - - - - - - */    
+.plantel
+    padding: map-get($white-space-padding, doble)
+    background-color: map-get($colores-fondo, verde-2)
+    .card
+        background-color: rgba(0,0,0,0 )
+        color: white
+        border: none
+        text-align: center
+        .card-body
+            margin: 0 auto
+            padding: 0
+            .card-title
+                margin: 0 auto
+                text-align: center
+                font-size: 1.5rem
+                font-weight: 600
+            .card-text
+                margin: 0 auto
+                text-align: center
+                font-size: 1.3rem
+                font-weight: 600
+
+/* - - - - - - - about - - - - - - */    
+.about
+    padding: map-get($white-space-padding, doble)
+    background-color: map-get($colores-fondo, verde-2)
+    img
+        margin: 0 auto
+        display: block !important
+    h2
+        color: white
+        text-align: left
+        font-weight: 300
+    p
+        color: white
+        text-align: left
+        font-weight: 300
+
+/* - - - - - - - contacto - - - - - - */    
+.contacto
+    padding: map-get($white-space-padding, doble)
+    background-color: map-get($colores-fondo, verde-3)
+    color: white
+    form
+        margin: 4rem auto
+
+.footer
+    background-color: map-get($colores-fondo, verde-1)
