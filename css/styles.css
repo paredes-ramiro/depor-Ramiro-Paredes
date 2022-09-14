@@ -1,0 +1,304 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+/* - - - - colores - - - - - */
+/* - - - - espaciado - - - - - */
+/* - - - - sombras - - - - - */
+/* - - - - maps - - - - - */
+/* - - - - Clases - - - - - */
+.scale-hover {
+  transition: 1s ease-in-out; }
+  .scale-hover:hover {
+    transform: scale(1.1);
+    transition: 1s ease-in-out; }
+
+.section-title, .section-p {
+  color: white;
+  text-align: left;
+  font-size: 2rem;
+  font-weight: 600; }
+
+.section-p {
+  font-size: 1.2rem;
+  font-weight: 100; }
+
+/* - - - - body - - - - - */
+body {
+  font-family: "Noto Sans", sans-serif !important;
+  background-color: #192F2A;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  padding: 0.5rem 1rem;
+  font-size: 16px;
+  overflow-x: hidden;
+  border: 1px solid #192F2A; }
+
+/* - - - - body - - - - - */
+/* - - - - fondo - - - - - */
+.fondo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  background-image: url("../img/fondo.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.3;
+  z-index: -1; }
+
+/* - - - - fondo - - - - - */
+/* - - - - banner - - - - - */
+.banner-sponsors {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  padding: 0.5rem 1rem;
+  background-color: #1a1a1a;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  z-index: 1;
+  overflow: hidden; }
+  .banner-sponsors img {
+    width: auto;
+    height: 1.5rem;
+    margin: 1rem 2rem;
+    display: inline-block; }
+
+/* - - - - banner - - - - - */
+/* - - - - nav - - - - - */
+header {
+  margin: 0 auto;
+  padding: 0.5rem 1rem;
+  background-color: #192F2A;
+  color: white;
+  z-index: 1;
+  box-shadow: 0.3rem 0.3rem 0.4rem 0.3rem rgba(0, 0, 0, 0.1); }
+  header nav {
+    margin: 0 auto;
+    vertical-align: middle;
+    justify-content: center; }
+  header #navbarNav {
+    align-content: center;
+    align-items: center; }
+    header #navbarNav ul {
+      margin: 0 auto;
+      padding: 0;
+      width: 90%;
+      list-style: none; }
+      header #navbarNav ul li {
+        margin: 0 auto;
+        padding: 0.1rem 0.2rem;
+        font-size: 1.1rem;
+        font-weight: bold;
+        border-left: 1px solid #00E094; }
+        header #navbarNav ul li a {
+          color: white; }
+          header #navbarNav ul li a:hover {
+            color: #00E094; }
+      header #navbarNav ul .btn-header {
+        background-color: #00E094;
+        color: #1a1a1a;
+        border: 1px solid #00E094;
+        border-radius: 5px;
+        box-shadow: 0.2rem 0.2rem 0.3rem 0.2rem rgba(0, 0, 0, 0.3);
+        box-sizing: border-box;
+        transition: 0.3s ease-in-out; }
+        header #navbarNav ul .btn-header:hover {
+          background-color: #192F2A;
+          border: 1px solid #00E094;
+          box-shadow: 0.1rem 0.1rem 0.2rem 0.1rem rgba(0, 0, 0, 0.5); }
+
+.navbar {
+  padding: 1.5rem 3rem; }
+
+/* - - - - nav - - - - - */
+/* - - - - - - - home - - - - - - */
+.home, .about {
+  padding: 4rem 8rem;
+  background-color: #003D2C; }
+  .home img, .about img {
+    width: 90%;
+    margin: 0 auto;
+    display: block !important; }
+  .home .btn-home, .about .btn-home, .home .contacto .btn-enviar, .contacto .home .btn-enviar, .about .contacto .btn-enviar, .contacto .about .btn-enviar, .home .contacto .btn-reset, .contacto .home .btn-reset, .about .contacto .btn-reset, .contacto .about .btn-reset {
+    margin: 0 auto;
+    font-size: 1.1rem;
+    padding: 0.5rem 1rem;
+    background-color: #00573F;
+    color: white;
+    border: 1px solid #00573F;
+    border-radius: 5px;
+    box-shadow: 0.2rem 0.2rem 0.3rem 0.2rem rgba(0, 0, 0, 0.3);
+    box-sizing: border-box;
+    transition: 0.3s ease-in-out;
+    text-decoration: none; }
+    .home .btn-home:hover, .about .btn-home:hover, .home .contacto .btn-enviar:hover, .contacto .home .btn-enviar:hover, .about .contacto .btn-enviar:hover, .contacto .about .btn-enviar:hover, .home .contacto .btn-reset:hover, .contacto .home .btn-reset:hover, .about .contacto .btn-reset:hover, .contacto .about .btn-reset:hover {
+      background-color: #192F2A;
+      border: 1px solid #00E094;
+      box-shadow: 0.1rem 0.1rem 0.2rem 0.1rem rgba(0, 0, 0, 0.5);
+      color: #00E094;
+      transition: 0.3s ease-in-out; }
+
+/* - - - - - - - home - - - - - - */
+/* - - - - - - - partidos - - - - - - */
+.partidos {
+  padding: 4rem 8rem;
+  background-color: #00573F; }
+  .partidos img {
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+    display: block !important;
+    border: 2px solid white;
+    border-radius: 5%;
+    box-shadow: 0.1rem 0.1rem 0.2rem 0.1rem rgba(0, 0, 0, 0.5); }
+    .partidos img:hover {
+      box-shadow: 0.3rem 0.3rem 0.4rem 0.3rem rgba(0, 0, 0, 0.1); }
+
+/* - - - - - - - partidos - - - - - - */
+/* - - - - - - - contacto - - - - - - */
+.contacto {
+  padding: 4rem 8rem;
+  background-color: #003D2C;
+  color: white;
+  justify-content: center; }
+  .contacto form {
+    margin: 4rem auto; }
+  .contacto .btn-enviar {
+    margin: 1rem 2rem;
+    background-color: #00E094;
+    border: 2px solid #00E094;
+    box-shadow: 0.3rem 0.3rem 0.4rem 0.3rem rgba(0, 0, 0, 0.1);
+    transition: 0.3s ease-in-out; }
+    .contacto .btn-enviar:hover {
+      background-color: #192F2A;
+      color: #00E094;
+      border: 2px solid #00E094;
+      box-shadow: 0.1rem 0.1rem 0.2rem 0.1rem rgba(0, 0, 0, 0.5);
+      transition: 0.3s ease-in-out; }
+  .contacto .btn-reset {
+    background-color: #192F2A;
+    border: 2px solid #192F2A;
+    color: #00573F;
+    box-shadow: 0.3rem 0.3rem 0.4rem 0.3rem rgba(0, 0, 0, 0.1);
+    transition: 0.3s ease-in-out; }
+    .contacto .btn-reset:hover {
+      background-color: #00573F;
+      color: #192F2A;
+      border: 2px solid #192F2A;
+      box-shadow: 0.1rem 0.1rem 0.2rem 0.1rem rgba(0, 0, 0, 0.5);
+      transition: 0.3s ease-in-out; }
+
+/* - - - - - - - contacto - - - - - - */
+.footer {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  padding: 4rem 8rem;
+  justify-content: center;
+  background-color: #192F2A;
+  color: white;
+  z-index: 1;
+  box-shadow: 0.3rem 0.3rem 0.4rem 0.3rem rgba(0, 0, 0, 0.1); }
+  .footer a {
+    text-decoration: none;
+    margin: 0 auto; }
+  .footer nav {
+    margin: 0 auto;
+    vertical-align: middle;
+    justify-content: center; }
+    .footer nav ul {
+      width: 90%;
+      height: auto;
+      margin: 0 auto;
+      padding: 0;
+      list-style: none;
+      justify-content: center; }
+      .footer nav ul li {
+        margin: 0 auto;
+        padding: 0.5rem 1rem;
+        font-size: 1rem;
+        font-weight: normal;
+        border-left: 0.5px dashed #00E094; }
+        .footer nav ul li a {
+          color: white; }
+          .footer nav ul li a:hover {
+            color: #00E094; }
+      .footer nav ul .btn-header {
+        background-color: #00E094;
+        color: #1a1a1a;
+        border: 1px solid #00E094;
+        border-radius: 5px;
+        box-shadow: 0.2rem 0.2rem 0.3rem 0.2rem rgba(0, 0, 0, 0.3);
+        box-sizing: border-box;
+        transition: 0.3s ease-in-out; }
+        .footer nav ul .btn-header:hover {
+          background-color: #192F2A;
+          border: 1px solid #00E094;
+          box-shadow: 0.1rem 0.1rem 0.2rem 0.1rem rgba(0, 0, 0, 0.5);
+          transition: 0.3s ease-in-out; }
+
+.navbar {
+  padding: 2rem 4rem; }
+
+/* - - - - - - - contacto - - - - - - */
+/* - - - - - - - plantel - - - - - - */
+.plantel {
+  padding: 4rem 8rem;
+  background-color: #00573F; }
+  .plantel .card {
+    margin: 1rem 2rem;
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    border: none;
+    text-align: center; }
+    .plantel .card img {
+      display: block;
+      margin: 0 auto; }
+    .plantel .card .card-body {
+      margin: 0 auto;
+      padding: 0; }
+      .plantel .card .card-body p {
+        display: inline; }
+        .plantel .card .card-body p small {
+          color: #00E094; }
+        .plantel .card .card-body p span {
+          color: #192F2A; }
+      .plantel .card .card-body .card-title {
+        margin: 0 auto;
+        text-align: center;
+        font-size: 1.5rem;
+        font-weight: 600; }
+      .plantel .card .card-body .card-text {
+        margin: 0 auto;
+        text-align: center;
+        font-size: 1.3rem;
+        font-weight: 600; }
+
+/* - - - - - - - plantel - - - - - - */
+/* - - - - - - - about - - - - - - */
+.about {
+  padding: 4rem 8rem;
+  background-color: #00573F; }
+  .about img {
+    width: 90%;
+    height: auto;
+    border-radius: 5%;
+    border: 2px solid #00E094;
+    box-shadow: 0.3rem 0.3rem 0.4rem 0.3rem rgba(0, 0, 0, 0.1);
+    transition: 0.3s ease-in-out; }
+    .about img:hover {
+      box-shadow: 0.1rem 0.1rem 0.2rem 0.1rem rgba(0, 0, 0, 0.5);
+      transition: 0.3s ease-in-out; }
+
+/* - - - - - - - about - - - - - - */
+
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,153 @@
+@media (max-width: 737px) {
+
+
+/*-------  header------*/
+
+    .navbar {
+        padding: 1rem;
+    }
+    .navbar-brand{
+        height: auto;
+        padding: 0;
+        margin: 0 auto;
+    }
+
+    .navbar-brand img{
+       height: 4rem;
+    }
+
+    .navbar-toggler{
+        border: 1px solid white;
+        background-color: white;
+    }
+
+    header #navbarNav ul li{
+        margin: 1rem 0;
+        font-weight: 300;
+
+    }
+    
+/*-------  header ------*/
+/*-------  home ------*/
+
+    .home{
+        padding: 0rem 1rem 4rem;
+    }
+    .home .col-12{
+        text-align: center;
+    }
+
+    .home img{
+        width: 50%;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .home .section-title{
+        margin: 1rem auto;
+        text-align: center;
+    }
+
+    .home .section-p{
+        margin: 1rem auto;
+    }
+
+    .home button{
+        margin: 3rem auto;
+        text-align: center;
+    }
+
+/*-------  home ------*/
+/*-------  partidos ------*/
+
+    .partidos{
+        padding: 2rem 1rem 4rem;
+    }
+    .partidos .col-12{
+        text-align: center;
+    }
+
+    .partidos img{
+        width: 80%;
+        display: block;
+        margin: 3rem auto;
+    }
+
+    .partidos .section-title{
+        margin: 1rem auto;
+        text-align: center;
+    }
+
+    .partidos .section-p{
+        margin: 1rem auto;
+    }
+
+/*-------  partidos ------*/
+/*-------  contacto ------*/
+
+
+.contacto{
+    padding: 2rem 1rem 4rem;
+}
+.contacto .col-12{
+    text-align: center;
+}
+
+.contacto .section-title{
+    margin: 1rem auto;
+    text-align: center;
+}
+
+.contacto .section-p{
+    margin: 1rem auto;
+}
+
+.contacto .btn-reset{
+    margin: 1rem 2rem;
+}
+
+
+/*-------  partidos ------*/
+/*-------  plantel ------*/
+
+.plantel{
+    padding: 2rem 1rem 4rem;
+}
+.plantel .col-12{
+    text-align: center;
+}
+
+.plantel .card{
+margin: 0 auto;;
+}
+
+/*-------  plantel ------*/
+/*-------  about ------*/
+.about{
+    padding: 2rem 1rem 4rem;
+}
+.about .col-12{
+    text-align: center;
+}
+
+.about .card{
+margin: 0 auto;;
+}
+
+.about .section-title{
+    margin: 1rem auto;
+    text-align: center;
+}
+
+.about .section-p{
+    margin: 1rem auto;
+}
+
+.about img{
+    margin: 2rem auto;
+}
+
+/*-------  about ------*/
+
+
+}

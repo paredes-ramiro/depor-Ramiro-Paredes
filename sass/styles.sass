@@ -1,0 +1,319 @@
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+
+/* - - - - colores - - - - - */
+$verde-1: #192F2A
+$verde-2: #003D2C
+$verde-3: #00573F
+$verde-4: #00E094
+$negro-1: #1a1a1a
+
+/* - - - - espaciado - - - - - */    
+$padding-0: 0.5rem 1rem
+$padding-1: 1.5rem 3rem
+$padding-2: 2rem 4rem
+$padding-3: 4rem 8rem
+$margin-0: 0 auto
+$margin-1: 1rem 2rem
+
+/* - - - - sombras - - - - - */   
+$shadow-1: 0.1rem 0.1rem 0.2rem 0.1rem rgba(0, 0, 0, 0.5)
+$shadow-2: 0.2rem 0.2rem 0.3rem 0.2rem rgba(0, 0, 0, 0.3)
+$shadow-3: 0.3rem 0.3rem 0.4rem 0.3rem rgba(0, 0, 0, 0.1)
+
+/* - - - - maps - - - - - */
+$colores-verdes: ( "verde-1": #192F2A, "verde-2": #003D2C, "verde-3": #00573F, "verde-4": #00E094, "negro-1":#1a1a1a)
+$white-space-padding: ( "cero": $padding-0, "simple": $padding-1, "doble": $padding-2, "triple": $padding-3)
+$shadows: ( "cerca": $shadow-1, "medio": $shadow-2, "lejos": $shadow-3)
+
+/* - - - - Clases - - - - - */
+@mixin div-fondo-completo
+    position: fixed
+    top: 0
+    left: 0
+    margin: 0
+    padding: 0
+    width: 100vw
+    height: 100vh
+
+.scale-hover
+    transition: 1s ease-in-out
+    &:hover
+        transform: scale(1.1)
+        transition: 1s ease-in-out
+
+.section-title
+    color: white
+    text-align: left
+    font-size: 2rem
+    font-weight: 600
+
+.section-p
+    @extend .section-title
+    font-size: 1.2rem
+    font-weight: 100
+
+/* - - - - body - - - - - */  
+body
+    font-family: 'Noto Sans', sans-serif !important
+    background-color: map-get($colores-verdes, verde-1)
+    width: 100%
+    height: auto
+    margin: $margin-0
+    padding: map-get($white-space-padding, cero)
+    font-size: 16px
+    overflow-x: hidden
+    border: 1px solid map-get($colores-verdes, verde-1)
+/* - - - - body - - - - - */  
+/* - - - - fondo - - - - - */      
+.fondo
+    @include div-fondo-completo
+    background-image: url("../img/fondo.png")
+    background-position: center center
+    background-repeat: no-repeat
+    background-size: cover
+    opacity: 0.3
+    z-index: -1
+/* - - - - fondo - - - - - */    
+/* - - - - banner - - - - - */      
+.banner-sponsors
+    width: 100%
+    height: auto
+    margin: $margin-0
+    padding: map-get($white-space-padding, cero)
+    background-color: map-get($colores-verdes, negro-1)
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    z-index: 1
+    overflow: hidden
+    img
+        width: auto
+        height: 1.5rem
+        margin: $margin-1
+        display: inline-block
+/* - - - - banner - - - - - */ 
+/* - - - - nav - - - - - */ 
+header
+    margin: $margin-0
+    padding: map-get($white-space-padding, cero )
+    background-color: map-get($colores-verdes, verde-1)
+    color: white
+    z-index: 1
+    box-shadow: map-get($shadows, lejos)
+    nav
+        margin: $margin-0
+        vertical-align: middle
+        justify-content: center
+    #navbarNav
+        align-content: center
+        align-items: center
+        ul
+            margin: $margin-0
+            padding: 0
+            width: 90%
+            list-style: none
+            li
+                margin: $margin-0
+                padding: 0.1rem 0.2rem
+                font-size: 1.1rem
+                font-weight: bold
+                border-left: 1px solid map-get($colores-verdes, verde-4)
+                a
+                    color: white
+                    &:hover
+                        color: map-get($colores-verdes, verde-4)
+            .btn-header
+                background-color: map-get($colores-verdes, verde-4)
+                color: #1a1a1a
+                border: 1px solid map-get($colores-verdes, verde-4)
+                border-radius: 5px
+                box-shadow: map-get($shadows, medio)
+                box-sizing: border-box
+                transition: 0.3s ease-in-out
+                &:hover
+                    background-color: map-get($colores-verdes, verde-1)
+                    border: 1px solid map-get($colores-verdes, verde-4)
+                    box-shadow: map-get($shadows, cerca)
+.navbar
+    padding: map-get($white-space-padding, simple )
+/* - - - - nav - - - - - */
+/* - - - - - - - home - - - - - - */   
+.home
+    padding: map-get($white-space-padding, triple)
+    background-color: map-get($colores-verdes, verde-2)
+    img
+        width: 90% 
+        margin: $margin-0
+        display: block !important
+    .btn-home
+        margin: $margin-0
+        font-size: 1.1rem
+        padding: map-get($white-space-padding,cero)
+        background-color: map-get($colores-verdes, verde-3)
+        color: white
+        border: 1px solid map-get($colores-verdes, verde-3)
+        border-radius: 5px
+        box-shadow: map-get($shadows, medio)
+        box-sizing: border-box
+        transition: 0.3s ease-in-out
+        text-decoration: none
+        &:hover
+            background-color: map-get($colores-verdes, verde-1)
+            border: 1px solid map-get($colores-verdes, verde-4)
+            box-shadow: map-get($shadows, cerca)
+            color: map-get($colores-verdes, verde-4)
+            transition: 0.3s ease-in-out
+/* - - - - - - - home - - - - - - */   
+/* - - - - - - - partidos - - - - - - */   
+.partidos
+    padding: map-get($white-space-padding, triple)
+    background-color: map-get($colores-verdes, verde-3)
+    img
+        width: 90%
+        height: auto
+        margin: $margin-0
+        display: block !important
+        border: 2px solid white
+        border-radius: 5%
+        box-shadow: map-get($shadows, cerca)
+        &:hover
+            box-shadow: map-get($shadows, lejos)
+/* - - - - - - - partidos - - - - - - */  
+/* - - - - - - - contacto - - - - - - */
+.contacto
+    padding: map-get($white-space-padding, triple)
+    background-color: map-get($colores-verdes, verde-2)
+    color: white
+    justify-content: center
+    form
+        margin: 4rem auto
+    .btn-enviar
+        @extend .btn-home
+        margin: $margin-1
+        background-color: map-get($colores-verdes, verde-4)
+        border: 2px solid map-get($colores-verdes, verde-4)
+        box-shadow: map-get($shadows, lejos)
+        transition: 0.3s ease-in-out
+        &:hover
+            background-color: map-get($colores-verdes, verde-1)
+            color: map-get($colores-verdes, verde-4)
+            border: 2px solid map-get($colores-verdes, verde-4)
+            box-shadow: map-get($shadows, cerca)
+            transition: 0.3s ease-in-out
+    .btn-reset
+        @extend .btn-home
+        background-color: map-get($colores-verdes, verde-1)
+        border: 2px solid map-get($colores-verdes, verde-1)
+        color: map-get($colores-verdes, verde-3)
+        box-shadow: map-get($shadows, lejos)
+        transition: 0.3s ease-in-out
+        &:hover
+            background-color: map-get($colores-verdes, verde-3)
+            color: map-get($colores-verdes, verde-1)
+            border: 2px solid map-get($colores-verdes, verde-1)
+            box-shadow: map-get($shadows, cerca)
+            transition: 0.3s ease-in-out
+/* - - - - - - - contacto - - - - - - */
+.footer
+    width: 100%
+    height: auto
+    margin: $margin-0
+    padding: map-get($white-space-padding, triple)
+    justify-content: center
+    background-color: map-get($colores-verdes, verde-1)
+    color: white
+    z-index: 1
+    box-shadow: map-get($shadows, lejos)
+    a
+        text-decoration: none
+        margin: $margin-0
+    nav
+        margin: $margin-0
+        vertical-align: middle
+        justify-content: center
+        ul
+            width: 90%
+            height: auto
+            margin: $margin-0
+            padding: 0
+            list-style: none
+            justify-content: center
+            li
+                margin: $margin-0
+                padding: map-get($white-space-padding, cero)
+                font-size: 1rem
+                font-weight: normal
+                border-left: 0.5px dashed map-get($colores-verdes, verde-4)
+                a
+                    color: white
+                    &:hover
+                        color: map-get($colores-verdes, verde-4)
+            .btn-header
+                background-color: map-get($colores-verdes, verde-4)
+                color: #1a1a1a
+                border: 1px solid map-get($colores-verdes, verde-4)
+                border-radius: 5px
+                box-shadow: map-get($shadows, medio)
+                box-sizing: border-box
+                transition: 0.3s ease-in-out
+                &:hover
+                    background-color: map-get($colores-verdes, verde-1)
+                    border: 1px solid map-get($colores-verdes, verde-4)
+                    box-shadow: map-get($shadows, cerca)
+                    transition: 0.3s ease-in-out
+.navbar
+    padding: map-get($white-space-padding, doble )
+/* - - - - - - - contacto - - - - - - */  
+/* - - - - - - - plantel - - - - - - */    
+.plantel
+    padding: map-get($white-space-padding, triple)
+    background-color: map-get($colores-verdes, verde-3)
+    .card
+        margin: $margin-1
+        background-color: rgba(0,0,0,0 )
+        color: white
+        border: none
+        text-align: center
+        img
+            display: block
+            margin: $margin-0
+        .card-body
+            margin: 0 auto
+            padding: 0
+            p
+                display: inline
+                small
+                    color: map-get($colores-verdes, verde-4)
+                span
+                    color: map-get($colores-verdes, verde-1)
+            .card-title
+                margin: 0 auto
+                text-align: center
+                font-size: 1.5rem
+                font-weight: 600
+            .card-text
+                margin: 0 auto
+                text-align: center
+                font-size: 1.3rem
+                font-weight: 600
+/* - - - - - - - plantel - - - - - - */  
+/* - - - - - - - about - - - - - - */    
+.about
+    @extend .home
+    padding: map-get($white-space-padding, triple)
+    background-color: map-get($colores-verdes, verde-3)
+    img
+        width: 90%
+        height: auto
+        border-radius: 5%
+        border: 2px solid map-get($colores-verdes, verde-4)
+        box-shadow: map-get($shadows,lejos)
+        transition: 0.3s ease-in-out
+        &:hover
+            box-shadow: map-get($shadows,cerca)
+            transition: 0.3s ease-in-out
+
+/* - - - - - - - about - - - - - - */ 
